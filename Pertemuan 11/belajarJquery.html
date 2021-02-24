@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<h1 id="judul"></h1>
+<button type="button" id="klik">test</button>
+<br>
+<br>
+<hr>
+
+<ul id="list"></ul>
+<input type="text" id="nama">
+<button type="button" id="tambah">tambah</button>
+<br>
+<hr>
+<div id="menghilang" style="display: none;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus suscipit tempora amet, possimus, praesentium error nulla ducimus, quis voluptates sit numquam minima pariatur. Optio blanditiis quidem totam laudantium libero at?</div>
+<button type="button" id="hilang">hilangg</button>
+<button type="button" id="muncul">munculkan</button>
+<button type="button" id="display">hide/show</button>
+
+    <script src="jquery.js"></script>    
+    <script>
+       
+        $('#klik').click(function(){
+            $('#judul').html("Wkwk");
+
+        });
+
+       $('#tambah').click(function(){
+           let nama = '<li>' +  $('#nama').val() + '<li>';
+           $('#list').append(nama);
+       });
+       
+       $('#hilang').click(function(){
+           $('#menghilang').hide();
+       });
+       $('#muncul').click(function(){
+           $('#menghilang').show();
+       });
+       $('#display').click(function(){
+           $('#menghilang').toggle();
+       });
+    </script>
+</body>
+</html>

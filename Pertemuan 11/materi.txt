@@ -1,0 +1,4 @@
+append = buat nambahin tapi ga hapus sebelum nya
+html = ngerubah sebelumnya
+val = mengambil nilai
+
